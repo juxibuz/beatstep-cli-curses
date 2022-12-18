@@ -175,11 +175,6 @@ device = 2;
   }
   refresh();
 
-  move(8,0);
-  printw("%d", aaa);
-  aaa++;
-
-
   k = getch();
 
   switch(k) {
@@ -221,8 +216,6 @@ device = 2;
   case KEY_RIGHT:
   c++;
   if (c==16) c = 0;
-  move(10,0);
-  printw("%d", aaa);
   break;
 
   case '\t':
