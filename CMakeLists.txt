@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories (src)
 
 find_package(RtMidi REQUIRED)
+find_package (Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
 
 include(FetchContent)
 FetchContent_Declare(
@@ -17,4 +19,4 @@ FetchContent_MakeAvailable(cli11)
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
-target_link_libraries(${PROJECT_NAME} PUBLIC CLI11::CLI11 RtMidi::rtmidi)
+target_link_libraries(${PROJECT_NAME} PUBLIC CLI11::CLI11 RtMidi::rtmidi ${CURSES_LIBRARIES})
