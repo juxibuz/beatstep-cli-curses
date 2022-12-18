@@ -14,6 +14,7 @@ Subcommands:
   fw                          Get the firmware version on the device
   get                         Get a param-value
   set                         Set a param-value
+  curses                      Launch curses interface (device defaults to 2)
 ```
 
 ### examples
