@@ -46,6 +46,15 @@ beatstep get 0 82
 
 # set the setting for 0:82 to 0
 beatstep set 0 82 0
+
+# curses interface
+t - set pad to toggle
+T - set pad to toggle and move to next pad
+g - set pad to gate
+G - set pad to gate and move to next pad
+, - decrease midi note
+. - increase midi note
+left and right arrow moves between pads
 ```
 
 
